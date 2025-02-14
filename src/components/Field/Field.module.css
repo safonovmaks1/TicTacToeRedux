@@ -1,0 +1,34 @@
+.box {
+	width: 100%;
+	height: calc(100% - 110px);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.item {
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	font-size: 30px;
+	transition: background-color 0.15s ease;
+	border-radius: 0.5rem;
+	border: none;
+	color: var(--first-color);
+	background: #dadce0;
+}
+
+.item.zero {
+	color: var(--first-color-alt);
+}
+
+.item:hover {
+	background: var(--text-color-light);
+}
+
+.item[disabled],
+.item[disabled]:hover {
+	cursor: not-allowed;
+	background: #c5c5c5;
+}

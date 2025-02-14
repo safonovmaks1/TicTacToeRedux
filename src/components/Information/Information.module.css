@@ -1,0 +1,5 @@
+.status {
+	margin-top: 2rem;
+	color: var(--title-color);
+	font-weight: 600;
+}
