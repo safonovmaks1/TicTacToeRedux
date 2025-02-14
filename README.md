@@ -1,1 +1,1 @@
-# React App Template
+# TicTacToe Redux
